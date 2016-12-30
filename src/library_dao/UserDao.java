@@ -219,7 +219,6 @@ public class UserDao {
 					bookInfo.setBookLoanTF(rs.getString("bookloantf"));
 					bookInfo.setBookLoanDate(rs.getDate("bookloandate"));
 				}
-
 			} else {
 				// 쿼리 날린 결과가 없다.
 				sql = "select bookname,bookauthor,bookpublisher,genrename from book, genre where book.genrecode = genre.genrecode and book.bookbarcode = ? ";

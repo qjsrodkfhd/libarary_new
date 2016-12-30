@@ -78,7 +78,8 @@ public class BookController {
 		bookTop5List.top5List(bookLoans);
 
 	}
-	public void requestBookDetailSeacrch() {
+	
+	public void requestBookDetailSeacrch(){
 
 		BookDetailSearchView bookDetailSearchView = new BookDetailSearchView();
 		int barcodeNumber = bookDetailSearchView.bookDetailInfo();
@@ -87,6 +88,7 @@ public class BookController {
 
 		BookSelectOneView bookSelectOneView = new BookSelectOneView();
 		bookSelectOneView.outputOneBook(bookInfo);
+		
 	}
 
 

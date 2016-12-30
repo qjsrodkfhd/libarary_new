@@ -165,7 +165,7 @@ public class BookDao {
 		//리턴값으로 top5 대출 내역 보내기
 		return bookLoans;
 	}
-	public BookDetail searchDetailBook(int barcodeNumber) {
+	public BookDetail searchDetailBook(int barcodeNumber){
 
 		BookDetail bookInfo = null;
 		PreparedStatement pstmt = null;
